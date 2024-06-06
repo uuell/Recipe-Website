@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style: none;
+    font-weight: 400;
+}
+.content-section {
+  display: none;
+}
+.content-section.active {
+  display: block;
+}
+.highlight {
+  border: solid 3px yellow;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+
+/* Header section */
+#header {
+    background: url("./imgs/header.jpg") no-repeat center;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+}
+
+#search-bar {
+    outline: none;
+    height: 40px;
+    width: 25vw;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 10px;
+}
+#search-button {
+    outline: none;
+    height: 40px;
+    width: 60px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 1rem 5rem 0;
+}
+.gallery-header {
+    font-weight: 700;
+    margin: 50px 0;
+}
+
+.gallery-container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 25px;
+}
+.gallery-card {
+    width: 13rem;
+    height: 100%;
+}
+.gallery-recipe-img {
+   height: 50px; 
+}
+
+
+/* Pagination */
+.pagination-color {
+    color: orange;
+}
+
+/* Modal */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 1130px) {
+    .gallery-container ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 900px) {
+    .search-icon {
+        height: 15px;
+    }
+    .gallery-container {
+        margin-right: 1rem;
+    }
+    .gallery-container ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .gallery-container ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery-card {
+        width: 10rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    #search-button {
+        width: 40px;
+    }
+    .search-icon {
+        height: 13px;
+    }
+    .gallery-container {
+        margin-right: 2rem;
+    }
+    .gallery-container ul {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .gallery-card {
+        width: 10rem;
+    }
+}
+@media screen and (max-width: 1020px) {
+    #search-bar {
+        height: 33px;
+        font-size: small;
+    }
+    #search-button {
+        height: 33px;
+    }
+}

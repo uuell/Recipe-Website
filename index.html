@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Search Section -->
+    <div id="header">
+      <input type="text" id="search-bar" placeholder="Search" />
+      <button id="search-button" type="button" class="btn btn-warning">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search search-icon"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery-container">
+      <h2 class="gallery-header">Featured Recipe</h2>
+      <div id="page-1" class="content-section active">
+        <ul>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/arozz caldo.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Arozz Caldo</h5>
+                <p class="card-text">
+                  Arroz Caldo literally means warm rice. This congee that
+                  closely resembles risotto has been a favorite Filipino snack
+                </p>
+                <p class="card-text"><strong>Difficulty:</strong> Easy</p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#arrozcaldo"
+                >
+                  View recipe
+                </button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/bistek.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Beef Steak</h5>
+                <p class="card-text">
+                  Pinoy beefsteak is a version of bistek tagalog that makes use
+                  of beef skirt steak.
+                </p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#beefsteak"
+                >
+                  View recipe
+                </button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/beef-caldereta-.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beef Kaldereta</h5>
+                <p class="card-text">
+                  Another favorite Filipino dish is the Kaldereta. It is a type
+                  of beef stew cooked with tomato sauce and liver spread.
+                </p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/bibingka.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Bibingka</h5>
+                <p class="card-text">
+                  Bibingka is a type of rice cake native to the Philippines.
+                </p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/bibingkang malagkit.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bibingkang Malagkit</h5>
+                <p class="card-text">
+                  Are you a fan of rice cakes? If you liked biko and suman, then
+                  you will love this sticky rice cake recipe called Bibingkang
+                  Malagkit.
+                </p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/bopis.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Bopis</h5>
+                <p class="card-text">
+                  Adqwdnaosdknlwia aslkdnwio dasldkhnawopd asldiawdnalsdnio
+                  asdas
+                </p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/buko pandan.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Buko Pandan</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/buko pie.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Buko Pie</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/Bulalo.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Bulalo</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/buttered shrimp.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Buttered Shrimp</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/champorado.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Champorado</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/chicharon.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Chicharon</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/chicken-inasal.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chicken Inasal</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/creamy-bicol-express.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bicol Express</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/Easy-Chicken-Adobo-3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chicken Adobo</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#chickenadobo"
+                >
+                  View recipe
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Page 2 -->
+      <div id="page-2" class="content-section">
+        <ul>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/dinuguan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Dinuguan</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/embutido.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Embutido</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/dinakdakan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Dinakdakan</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/Ensaladang-Talong.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ensaladang Talong</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/ginataang alimasag.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ginataang Alimasag</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/ginataang bilo bilo with langka.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ginataang Bilo bilo with Langka</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/Ginigsang Munggo.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ginisang Munggo</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/halo-halo-.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Halo halo</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/inihaw na isda.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Inihaw na isda</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/kare-kare-36a0c9.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kare kare</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/kutsinta.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kutsinta</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/kwekwek.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kwek-kwek</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/laing.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Laing</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/leche plan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Leche flan</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/Maja-Blanca.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Maja-Blanca</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Page 3 -->
+      <div id="page-3" class="content-section">
+        <ul>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/Make-Lumpia-Intro.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lumpia</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/mango graham.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mango Graham</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/menudo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Menudo</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/okoy.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Okoy</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/Paksiw-na-Bangus.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paksiw na Bangus</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/palitaw.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Palitaw</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/pinakbet.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Pinakbet</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/pininyahang-manok-.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pininyahang Manok</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/puto.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Puto</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img
+                src="./imgs/PUTOO-BUMBONG.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Puto Bumbong</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/sisig.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Sisig</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/taho.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Taho</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/Tinola.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Tinolang Manok</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/TURON_.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Turon</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card gallery-card">
+              <img src="./imgs/yema.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Yema</h5>
+                <p class="card-text">some texts</p>
+                <p class="card-text"><strong>Difficulty:</strong> medium</p>
+                <a href="#" class="btn btn-warning">View recipe</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <nav aria-label="Page navigation">
+      <ul class="pagination pagination-lg justify-content-center">
+        <li class="page-item disabled" id="prev-page">
+          <a class="page-link" href="#">
+            <span class="pagination-color" aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link pagination-color" href="#" data-page="1">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link pagination-color" href="#" data-page="2">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link pagination-color" href="#" data-page="3">3</a>
+        </li>
+        <li class="page-item" id="next-page">
+          <a class="page-link" href="#">
+            <span class="pagination-color" aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- MODAL -->
+    <!-- arroz caldo -->
+    <div
+      class="modal fade modal-dialog modal-dialog-scrollable"
+      id="arrozcaldo"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Arroz Caldo Recipe
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <p>
+                <strong>Prep: </strong>5minutes <strong>Cook: </strong>45minutes
+              </p>
+              <p><strong>Total: </strong> 50minutes</p>
+            </div>
+            <h5>Ingredients:</h5>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe1" />
+              <label for="arrozCaldoRecipe1"
+                >1 ½ lbs chicken cut into serving pieces</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe2" />
+              <label for="arrozCaldoRecipe2">1 ½ cups rice uncooked</label>
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe3" />
+              <label for="arrozCaldoRecipe3"
+                >34 ounces water about 1 liter</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe4" />
+              <label for="arrozCaldoRecipe4">2 Tablespoons fish sauce</label>
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe5" />
+              <label for="arrozCaldoRecipe5">1 teaspoon garlic</label>
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe6" />
+              <label for="arrozCaldoRecipe6"
+                >1/4 teaspoon ground black pepper</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe7" />
+              <label for="arrozCaldoRecipe7">1 cup onion minced</label>
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe8" />
+              <label for="arrozCaldoRecipe8">4 eggs hard boiled</label>
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe9" />
+              <label for="arrozCaldoRecipe9"
+                >1 cup scallions green onions, minced</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe10" />
+              <label for="arrozCaldoRecipe10">2 knobs ginger julienned</label>
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe11" />
+              <label for="arrozCaldoRecipe11">3 tbsp safflower kasubha</label>
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe12" />
+              <label for="arrozCaldoRecipe12">1 chicken cube bouillon</label>
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe13" />
+              <label for="arrozCaldoRecipe13"
+                >1 lemon or 4 pieces calamansi</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="arrozCaldoRecipe" id="arrozCaldoRecipe" />
+              <label for="arrozCaldoRecipe">2 Tablespoon cooking oil</label>
+            </div>
+            <hr>
+            <h5>Instructions:</h5>
+            <ol>
+                <li>In a pot, heat the cooking oil then saute the garlic, onion, and ginger</li>
+                <li>Dash-in some ground black pepper</li>
+                <li>Add the chicken cube and cook until the cube melts</li>
+                <li>Put-in the chicken and cook until outer layer color turns golden brown</li>
+                <li>Add the fish sauce and uncooked rice then mix and cook for a few minutes</li>
+                <li>Pour-in the water and bring to a boil</li>
+                <li>Stir occasionally and simmer until the rice is fully cooked (about 30 to 40 minutes)</li>
+                <li>Put-in the hard boiled eggs</li>
+                <li>Add the safflower for additional color and aroma</li>
+                <li>Serve hot with garlic, minced scallions, and lemon. Share and Enjoy!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- beefsteak -->
+    <div
+      class="modal fade modal-dialog modal-dialog-scrollable"
+      id="beefsteak"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Beef Steak Recipe
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <p>
+                <strong>Prep: </strong>5minutes <strong>Cook: </strong>1hour
+              </p>
+              <p><strong>Total: </strong> 1hr 5minutes</p>
+            </div>
+            <h5>Ingredients:</h5>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe1" />
+              <label for="beefSteakRecipe1"
+                >1 ½ lbs chicken cut into serving pieces</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe2" />
+              <label for="beefSteakRecipe2">1 ½ cups rice uncooked</label>
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe3" />
+              <label for="beefSteakRecipe3"
+                >34 ounces water about 1 liter</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe4" />
+              <label for="beefSteakRecipe4">2 Tablespoons fish sauce</label>
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe5" />
+              <label for="beefSteakRecipe5">1 teaspoon garlic</label>
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe6" />
+              <label for="beefSteakRecipe6"
+                >1/4 teaspoon ground black pepper</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe7" />
+              <label for="beefSteakRecipe7">1 cup onion minced</label>
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe8" />
+              <label for="beefSteakRecipe8">4 eggs hard boiled</label>
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe9" />
+              <label for="beefSteakRecipe9"
+                >1 cup scallions green onions, minced</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe10" />
+              <label for="beefSteakRecipe10">2 knobs ginger julienned</label>
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe11" />
+              <label for="beefSteakRecipe11">3 tbsp safflower kasubha</label>
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe12" />
+              <label for="beefSteakRecipe12">1 chicken cube bouillon</label>
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe13" />
+              <label for="beefSteakRecipe13"
+                >1 lemon or 4 pieces calamansi</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="beefSteakRecipe" id="beefSteakRecipe14" />
+              <label for="beefSteakRecipe14">2 Tablespoon cooking oil</label>
+            </div>
+            <hr>
+            <h5>Instructions:</h5>
+            <ol>
+                <li>In a pot, heat the cooking oil then saute the garlic, onion, and ginger</li>
+                <li>Dash-in some ground black pepper</li>
+                <li>Add the chicken cube and cook until the cube melts</li>
+                <li>Put-in the chicken and cook until outer layer color turns golden brown</li>
+                <li>Add the fish sauce and uncooked rice then mix and cook for a few minutes</li>
+                <li>Pour-in the water and bring to a boil</li>
+                <li>Stir occasionally and simmer until the rice is fully cooked (about 30 to 40 minutes)</li>
+                <li>Put-in the hard boiled eggs</li>
+                <li>Add the safflower for additional color and aroma</li>
+                <li>Serve hot with garlic, minced scallions, and lemon. Share and Enjoy!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Chicken Adobo -->
+    <div
+      class="modal fade modal-dialog modal-dialog-scrollable"
+      id="chickenadobo"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Beef Steak Recipe
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <p>
+                <strong>Prep: </strong>5minutes <strong>Cook: </strong>1hour
+              </p>
+              <p><strong>Total: </strong> 1hr 5minutes</p>
+            </div>
+            <h5>Ingredients:</h5>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe1" />
+              <label for="chickenadoborecipe1"
+                >1 ½ lbs chicken cut into serving pieces</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe2" />
+              <label for="chickenadoborecipe2">1 ½ cups rice uncooked</label>
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe3" />
+              <label for="chickenadoborecipe3"
+                >34 ounces water about 1 liter</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe4" />
+              <label for="chickenadoborecipe4">2 Tablespoons fish sauce</label>
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe5" />
+              <label for="chickenadoborecipe5">1 teaspoon garlic</label>
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe6" />
+              <label for="chickenadoborecipe6"
+                >1/4 teaspoon ground black pepper</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe7" />
+              <label for="chickenadoborecipe7">1 cup onion minced</label>
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe8" />
+              <label for="chickenadoborecipe8">4 eggs hard boiled</label>
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe9" />
+              <label for="chickenadoborecipe9"
+                >1 cup scallions green onions, minced</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe10" />
+              <label for="chickenadoborecipe10">2 knobs ginger julienned</label>
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe11" />
+              <label for="chickenadoborecipe11">3 tbsp safflower kasubha</label>
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe12" />
+              <label for="chickenadoborecipe12">1 chicken cube bouillon</label>
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe13" />
+              <label for="chickenadoborecipe13"
+                >1 lemon or 4 pieces calamansi</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="chickenadoborecipe" id="chickenadoborecipe14" />
+              <label for="chickenadoborecipe14">2 Tablespoon cooking oil</label>
+            </div>
+            <hr>
+            <h5>Instructions:</h5>
+            <ol>
+                <li>In a pot, heat the cooking oil then saute the garlic, onion, and ginger</li>
+                <li>Dash-in some ground black pepper</li>
+                <li>Add the chicken cube and cook until the cube melts</li>
+                <li>Put-in the chicken and cook until outer layer color turns golden brown</li>
+                <li>Add the fish sauce and uncooked rice then mix and cook for a few minutes</li>
+                <li>Pour-in the water and bring to a boil</li>
+                <li>Stir occasionally and simmer until the rice is fully cooked (about 30 to 40 minutes)</li>
+                <li>Put-in the hard boiled eggs</li>
+                <li>Add the safflower for additional color and aroma</li>
+                <li>Serve hot with garlic, minced scallions, and lemon. Share and Enjoy!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const paginationLinks = document.querySelectorAll(
+          ".page-link[data-page]"
+        );
+        const prevPage = document.getElementById("prev-page");
+        const nextPage = document.getElementById("next-page");
+        const sections = document.querySelectorAll(".content-section");
+        const searchBar = document.getElementById("search-bar");
+        const searchButton = document.getElementById("search-button");
+        let currentPage = 1;
+        const totalPages = sections.length;
+
+        function showPage(page) {
+          sections.forEach((section, index) => {
+            section.classList.toggle("active", index + 1 === page);
+          });
+          currentPage = page;
+          updatePaginationControls();
+        }
+
+        function updatePaginationControls() {
+          prevPage.classList.toggle("disabled", currentPage === 1);
+          nextPage.classList.toggle("disabled", currentPage === totalPages);
+        }
+
+        function searchItems() {
+          const query = searchBar.value.toLowerCase();
+          sections.forEach((section, index) => {
+            const items = section.querySelectorAll("li");
+            let matchFound = false;
+            items.forEach((item) => {
+              const itemNameElement = item.querySelector("h5");
+              if (itemNameElement) {
+                const itemName = itemNameElement.textContent.toLowerCase();
+                if (query && itemName.includes(query)) {
+                  // console.log(itemName);
+                  // console.log(query);
+                  item.classList.add("highlight");
+                  matchFound = true;
+                } else {
+                  item.classList.remove("highlight");
+                }
+              }
+            });
+            if (matchFound) {
+              showPage(index + 1);
+            }
+          });
+        }
+
+        paginationLinks.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const page = parseInt(this.dataset.page);
+            showPage(page);
+          });
+        });
+
+        prevPage.addEventListener("click", function (event) {
+          event.preventDefault();
+          if (currentPage > 1) {
+            showPage(currentPage - 1);
+          }
+        });
+
+        nextPage.addEventListener("click", function (event) {
+          event.preventDefault();
+          if (currentPage < totalPages) {
+            showPage(currentPage + 1);
+          }
+        });
+
+        searchButton.addEventListener("click", function () {
+          searchItems();
+        });
+
+        searchBar.addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            searchItems();
+          }
+        });
+
+        updatePaginationControls();
+      });
+    </script>
+  </body>
+</html>
