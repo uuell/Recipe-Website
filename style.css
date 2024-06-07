@@ -14,7 +14,7 @@ ul li {
   display: block;
 }
 .highlight {
-  border: solid 3px yellow;
+  border: solid 3px orangered;
   border-radius: 5px;
 }
 
